@@ -1,0 +1,44 @@
+{
+  "name": "ilivebox.net",
+  "version": "1.0.0",
+  "description": "Life was like a box of chocolates.",
+  "author": "geminiyellow@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/geminiyellow/ilivebox.net",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geminiyellow/ilivebox.net.git"
+  },
+  "keywords": [
+    "ilivebox.net"
+  ],
+  "bugs": {
+    "url": "https://github.com/geminiyellow/ilivebox.net/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.1.0",
+    "body-parser": "^1.12.0",
+    "compression": "^1.4.1",
+    "cors": "^2.5.3",
+    "express": "^4.12.2",
+    "jwt-simple": "^0.2.0",
+    "moment": "^2.9.0",
+    "mongoose": "^3.8.24",
+    "request": "^2.53.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-complexity": "^0.3.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-csso": "^1.0.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-header": "^1.2.2",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-recess": "^1.1.2",
+    "gulp-uglify": "^1.1.0"
+  }
+}
