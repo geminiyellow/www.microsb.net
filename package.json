@@ -5,6 +5,9 @@
   "author": "geminiyellow@gmail.com",
   "license": "MIT",
   "homepage": "https://github.com/geminiyellow/ilivebox.net",
+  "keywords": [
+    "ilivebox.net"
+  ],
   "scripts": {
     "start": "node server/server.js"
   },
@@ -12,12 +15,10 @@
     "type": "git",
     "url": "https://github.com/geminiyellow/ilivebox.net.git"
   },
-  "keywords": [
-    "ilivebox.net"
-  ],
   "bugs": {
     "url": "https://github.com/geminiyellow/ilivebox.net/issues"
   },
+  "engines" : { "node" : ">=0.10.26 <0.12" },
   "dependencies": {
     "bcryptjs": "^2.1.0",
     "body-parser": "^1.12.0",

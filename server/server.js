@@ -30,7 +30,8 @@ app.use(compress());
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public'), { maxAge: 2628000000 }));
+// app.use(express.static(path.join(__dirname, 'public'), { maxAge: 2628000000 }));
+app.use(express.static(path.join(__dirname, '../client'), { maxAge: 2628000000 }));
 
 /*
  |--------------------------------------------------------------------------
