@@ -19,12 +19,12 @@ angular.module('Instagram', ['ngRoute', 'ngMessages', 'satellizer'])
       })
       .otherwise('/');
 
-    $authProvider.loginUrl = 'http://instagram-server.herokuapp.com/auth/login';
-    $authProvider.signupUrl = 'http://instagram-server.herokuapp.com/auth/signup';
+    $authProvider.loginUrl = 'https://ilivebox.herokuapp.com/auth/login';
+    $authProvider.signupUrl = 'https://ilivebox.herokuapp.com/auth/signup';
     $authProvider.oauth2({
       name: 'instagram',
-      url: 'http://instagram-server.herokuapp.com/auth/instagram',
-      redirectUri: 'https://dl.dropboxusercontent.com/u/14131013/instagram/index.html',
+      url: 'https://ilivebox.herokuapp.com/auth/instagram',
+      redirectUri: 'https://ilivebox.herokuapp.com/index.html',
       clientId: '799d1f8ea0e44ac8b70e7f18fcacedd1',
       requiredUrlParams: ['scope'],
       scope: ['likes'],
