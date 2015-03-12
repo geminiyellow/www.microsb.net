@@ -25,7 +25,7 @@ angular.module('Instagram', ['ngRoute', 'ngMessages', 'satellizer'])
       name: 'instagram',
       url: 'https://ilivebox.herokuapp.com/auth/instagram',
       redirectUri: 'https://ilivebox.herokuapp.com/index.html',
-      clientId: '799d1f8ea0e44ac8b70e7f18fcacedd1',
+      clientId: 'ab75288a4f3d4cf283942f63085d688b',
       requiredUrlParams: ['scope'],
       scope: ['likes'],
       scopeDelimiter: '+',

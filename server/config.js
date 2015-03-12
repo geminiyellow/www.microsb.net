@@ -1,5 +1,5 @@
 module.exports = {
     db: process.env.MONGOLAB_URI || 'localhost',
-    clientSecret: process.env.clientSecret || '46d6cc16b2fa445595e747a3349cb6e4',
+    clientSecret: process.env.clientSecret || '57e945cc72cd4c5abfd8a08cbfd08de0',
     tokenSecret: process.env.tokenSecret || 'pick a hard to guess string'
 };
