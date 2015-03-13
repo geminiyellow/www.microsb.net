@@ -3,7 +3,18 @@
         <ion-tab title="Chat" icon-on="ion-ios-chatbubble" icon-off="ion-ios-chatbubble-outline">
             <ion-view>
                 <ion-content class="has-header">
-                  <h1>Chat</h1>
+                    <ion-refresher pulling-text="Refresh..." 
+                        on-refresh="doRefresh()">
+                    </ion-refresher>
+                    <ion-list>
+                        <ion-item ng-repeat="item in items">
+                            {{item.title}}
+                        </ion-item>
+                    </ion-list>
+                    
+                    <ion-infinite-scroll distance="10%"
+                        on-infinite="loadMore()">
+                    </ion-infinite-scroll>
                 </ion-content>
             </ion-view>
         </ion-tab>
