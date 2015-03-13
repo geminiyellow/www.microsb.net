@@ -45,6 +45,26 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+    
+    $scope.items = [
+            { title: 'Reggae', id: 1 },
+            { title: 'Chill', id: 2 },
+            { title: 'Dubstep', id: 3 },
+            { title: 'Indie', id: 4 },
+            { title: 'Rap', id: 5 },
+            { title: 'Cowbell', id: 6 },
+            { title: 'Chill', id: 2 },
+            { title: 'Dubstep', id: 3 },
+            { title: 'Indie', id: 4 },
+            { title: 'Rap', id: 5 },
+            { title: 'Cowbell', id: 6 },
+            { title: 'Chill', id: 2 },
+            { title: 'Dubstep', id: 3 },
+            { title: 'Indie', id: 4 },
+            { title: 'Rap', id: 5 },
+            { title: 'Cowbell', id: 6 }
+        ];
+    
 })
 
 .controller('BrowseCtrl', function($scope, $stateParams) {
