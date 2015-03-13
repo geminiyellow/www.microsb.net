@@ -1,9 +1,12 @@
 <ion-view view-title="Playlists">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
-      </ion-item>
+        <div class="bar bar-header item-input-inset">
+            <ion-search placeholder="Search a user" filter="search"></ion-search>
+        </div>
+        <ion-item ng-repeat="playlist in playlists | filter:search.value" href="#/app/playlists/{{playlist.id}}">
+            {{playlist.title}}
+        </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
